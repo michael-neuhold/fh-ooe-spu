@@ -1,0 +1,20 @@
+@startuml
+left to right direction
+
+actor Benutzer
+
+rectangle "Online Kalender" {
+    usecase "Termin abfragen" as UC1
+    usecase "Termin exportieren" as UC2
+    usecase "Termin löschen" as UC3
+    usecase "Termin ändern" as UC4
+    usecase "Termin erfassen" as UC5
+}
+
+Benutzer --> UC1
+Benutzer --> UC2
+Benutzer --> UC3
+Benutzer --> UC4
+Benutzer --> UC5
+
+@enduml

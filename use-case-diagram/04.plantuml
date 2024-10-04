@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+
+usecase "Termin erfassen" as UC1
+
+note right of UC1
+  Ein Termin kann für einen oder mehrere TeilnehmerInnen
+  von berechtigten Benutzern (müssen nicht notwendigerweise
+  auch Teilnehmer sein) erfasst werden. Alle TeilnehmerInnen
+  müssen über diesen neuen Termin verständigt werden. Neue
+  Termine müssen sofort in allen geöffneten, die jeweiligen
+  TeilnehmerInnen betreffenden Kalendern nachgezogen
+  werden.
+end note
+
+@enduml

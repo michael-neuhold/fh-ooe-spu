@@ -1,0 +1,15 @@
+@startuml
+
+actor "Third-Party Calendar System" as ExternalSystem
+
+rectangle "Online Kalender" {
+    usecase "Synchronize Calendar" as UC1
+    usecase "Import Events" as UC2
+    usecase "Export Events" as UC3
+}
+
+ExternalSystem --> UC1
+ExternalSystem --> UC2
+ExternalSystem --> UC3
+
+@enduml

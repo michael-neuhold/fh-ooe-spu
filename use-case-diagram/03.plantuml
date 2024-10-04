@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+
+actor Benutzer
+
+rectangle tt as "<<actor>>" {
+ label "E-Mail-System"
+}
+
+rectangle "Online Kalender" {
+    usecase "Teilnehmer verständigen" as UC2
+    usecase "Termin erfassen" as UC1
+    UC2 --> tt
+}
+
+Benutzer --> UC1
+
+@enduml

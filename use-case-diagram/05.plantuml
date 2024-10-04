@@ -1,0 +1,14 @@
+@startuml
+top to bottom direction
+
+actor Benutzer
+
+    usecase "Termin erfassen" as UC1
+    usecase "Kalender aktualisieren" as UC2
+
+Benutzer --> UC1
+Benutzer --> UC2
+
+UC1 .u.> UC2 : <<include>>
+
+@enduml
